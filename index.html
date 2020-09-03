@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="content-type" content="text/html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet"> 
+
+
+    <script
+    type="text/javascript" src="//code.jquery.com/jquery-1.7.1.js"></script>
+    <title>Test</title>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+
+</head>
+<body>
+
+    <div class="holder">
+
+        <!-- PROFILE -->
+        <div class="profile-pic">
+            <div class="image">
+                <img src="images/profile-pic.jpg" alt="Profile pic" />
+            </div>
+            <div class="content">
+                <h1>Gillian Thompson</h1>
+                <p>Cras mattis consectetur purus sit amet fermen. Morbi leo risus, porta ac consectetur ac, nulla  delious vestibulum at eros mortam.</p>
+            </div>
+            <div class="social-statistics">
+                <div class="social-statistics-cell">
+                    <h2>527</h2>
+                    <p>PHOTOS</p>
+                </div>
+                <div class="social-statistics-cell">
+                    <h2>582,105</h2>
+                    <p>FOLLOWERS</p>
+                </div>
+                <div class="social-statistics-cell">
+                    <h2>76</h2>
+                    <p>Following</p>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+
+        <!-- END PROFILE -->
+
+        <div class="clearBreak"></div>
+
+        <!-- MUSIC -->
+
+        <div class="music">
+            <div class="image">
+                <img src="images/music.jpg" alt="Music pic" />
+            </div>
+            <div class="content">
+                <h2>I'm a Ruin</h2>
+                <p>Marina and The Diamonds</p>
+                <div id="track" class="track">
+                    <div class="elapsed"></div>
+                </div>
+                <div class="controls">
+                    <div class="cell">
+                        <svg viewBox="0 0 448 512"><path d="M64 468V44c0-6.6 5.4-12 12-12h48c6.6 0 12 5.4 12 12v176.4l195.5-181C352.1 22.3 384 36.6 384 64v384c0 27.4-31.9 41.7-52.5 24.6L136 292.7V468c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12z" class=""></path></svg>
+                    </div>
+                    <div class="cell">
+                        <svg  viewBox="0 0 448 512" class="svg-inline--fa fa-play fa-w-14 fa-2x"><path fill="currentColor" d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z" class=""></path></svg>
+                    </div>
+                    <div class="cell">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="step-forward" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-step-forward fa-w-14 fa-7x"><path fill="currentColor" d="M384 44v424c0 6.6-5.4 12-12 12h-48c-6.6 0-12-5.4-12-12V291.6l-195.5 181C95.9 489.7 64 475.4 64 448V64c0-27.4 31.9-41.7 52.5-24.6L312 219.3V44c0-6.6 5.4-12 12-12h48c6.6 0 12 5.4 12 12z" class=""></path></svg>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="menu">
+                        <svg version="1.1" viewBox="0 0 24 24">
+                            <g>
+                                <path class="st0" d="M13.1,10.4h-2.3c-0.1,0-0.2,0.1-0.2,0.2c-0.1,0-0.1,0.1-0.1,0.2v2.3c0,0.1,0,0.2,0.1,0.3
+                                c0,0.1,0.1,0.1,0.2,0.1h2.3c0.1,0,0.2,0,0.3-0.1c0.1-0.1,0.1-0.2,0.1-0.3v-2.3c0-0.1,0-0.2-0.1-0.3C13.3,10.5,13.2,10.4,13.1,10.4z
+                                "/>
+                                <path class="st0" d="M13.1,15h-2.3c-0.1,0-0.2,0-0.3,0.1c-0.1,0.1-0.1,0.2-0.1,0.3v2.3c0,0.1,0,0.2,0.1,0.3
+                                c0.1,0.1,0.2,0.1,0.3,0.1h2.3c0.1,0,0.2,0,0.3-0.1c0.1-0.1,0.1-0.2,0.1-0.3v-2.3c0-0.1,0-0.2-0.1-0.3C13.3,15.1,13.2,15,13.1,15z"
+                                />
+                                <path class="st0" d="M13.1,5.8h-2.3c-0.1,0-0.2,0-0.3,0.1c0,0.1,0,0.2,0,0.3v2.3c0,0.1,0,0.2,0.1,0.3c0,0.1,0.1,0.1,0.2,0.1h2.3
+                                c0.1,0,0.2,0,0.3-0.1s0.1-0.2,0.1-0.3V6.2c0-0.1,0-0.2-0.1-0.3C13.3,5.9,13.2,5.8,13.1,5.8z"/>
+                            </g>
+                        </svg>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- END MUSIC -->
+
+        <div class="clearBreak"></div>
+
+        <!-- LOGIN -->
+
+        <div class="login">
+            <form class="loginForm" method="post">
+                <div class="formTop">
+                    <h1>Account Login</h1>
+                    <input type="text" name="username" placeholder="Username">
+                    <input type="password" name="password" placeholder="Password">
+                </div>
+                <div class="formBottom">
+                    <div class="table">
+                        <div class="cell">
+                            <span>Forgot your password?</span>
+                        </div>
+                        <div class="cell submit">
+                            <button class="submitForm">Login</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- END LOGIN -->
+
+        <div class="clearBreak"></div>
+
+        <!-- WEATHER -->
+
+        <div class="weather">
+            <div class="insideLeft">
+                <img src="images/sun.png" />
+                <h1>31<span>&#176;</span></h1>
+                <p>Sunny all day</p>
+            </div>
+            <div class="location">
+
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-map-marker-alt fa-w-12 fa-2x"><path fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z" class=""></path></svg>
+                <span>San Francisco, CA</span>
+            </div>
+        </div>
+
+        <!-- END WEATHER -->
+
+
+        <div class="clearBreak"></div>
+
+        <!-- VIDEO -->
+        <div class="video">
+            <img src="images/video.jpg" />
+            <div class="controls">
+                <div class="cell">
+                    <svg class="start" viewBox="0 0 448 512"><path fill="currentColor" d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z" class=""></path></svg>
+                    <svg class="stop" viewBox="0 0 448 512" ><path fill="currentColor" d="M144 479H48c-26.5 0-48-21.5-48-48V79c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48v352c0 26.5-21.5 48-48 48zm304-48V79c0-26.5-21.5-48-48-48h-96c-26.5 0-48 21.5-48 48v352c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48z" class=""></path></svg>
+                </div>
+                <div class="cell">
+                    <p>45:26</p>
+                </div>
+                <div class="cell">
+                    <div class="track">
+                        <div id="elapsedTime" class="elapsed"></div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <p>1:27:41</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- END VIDEO -->
+
+        <div class="clearBreak"></div>
+
+        <!-- GALLERY -->
+
+        <div class="gallery">
+            <div class="header">
+                <div class="cell"><h1>Latest Photos</h1></div>
+                <div class="cell aRight"><h2>See All &#187;</h2></div>
+            </div>
+            <div class="wrapper">
+                <div class="box a"><img src="images/image01.jpg"></div>
+                <div class="box b"><img src="images/image02.jpg"></div>
+                <div class="box c"><img src="images/image03.jpg"></div>
+                <div class="box d"><img src="images/image04.jpg"></div>
+                <div class="box e"><img src="images/image05.jpg"></div>
+                <div class="box f"><img src="images/image06.jpg"></div>
+                <div class="box g"><img src="images/image08.jpg"></div>
+                <div class="box h"><img src="images/image07.jpg"></div>
+            </div>
+        </div>
+
+        <!-- END GALLERY -->
+
+        <div class="clearBreak"></div>
+
+        <!-- SETTINGS -->
+
+        <div class="settings">
+            <div class="header">
+                <h1>Settings</h1>
+
+                <div class="switches">
+
+                    <div class="row">
+                        <div class="cell">
+                            <span>Email Notifications</span>
+                            <label class="switch">
+                                <input id="emailNotifications" type="checkbox" checked="checked">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                        <div class="cell">
+                            <span>Automatically Logout</span>
+                            <label class="switch">
+                                <input id="automaticallyLogout" type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="cell">
+                            <span>Show Full Names</span>
+                            <label class="switch">
+                                <input id="showFullNames" type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                        <div class="cell">
+                            <span>Show Ads</span>
+                            <label class="switch">
+                                <input id="showAds" type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="cell">
+                            <span>Sharing Features</span>
+                            <label class="switch">
+                                <input id="sharingFeatures" type="checkbox" checked="checked">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                        <div class="cell">
+                            <span>Allow Multiple Uploads</span>
+                            <label class="switch">
+                                <input id="allowMultipleUploads" type="checkbox" checked="checked">
+                                <span class="slider"></span>
+                            </label>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="bottom">
+                <div class="cell resetSettings">
+                    <span class="resetToDefault">Reset to default</span>
+                </div>
+                <div class="cell saveSettings">
+                    <button class="save">Save</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- END SETTINGS -->
+
+        <div class="clearBreak"></div>
+
+        <!-- PUBLISH PHOTOS -->
+
+        <div class="publishPhotos">
+            <img src="images/publish-photos.png">
+            <div class="header">
+                <h1>Publish Photos</h1>
+                <p>Sed posuere consectetur est at lobortis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur mus.</p>
+            </div>
+            <div class="bottom">
+                <div class="cancelCell">
+                    <button class="cancel">Cancel</button>
+                </div>
+                <div class="publishCell">
+                    <button class="publish">Publish</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- END PUBLISH PHOTOS -->
+
+        <div class="clearBreak"></div>
+
+        <!-- CALENDAR -->
+
+        <div class="calendar">
+
+            <div class="month">      
+
+                <div class="prev">&#10094;</div>
+                <div class="next">&#10095;</div>
+                <div>
+                    <p>17th</p>
+                    <span class="currentMonth">March</span><span class="currentYear"> 2015</span>
+                </div>
+
+            </div>
+
+            <ul class="days">  
+                <li class="disabledDate"><span>30</span></li>
+                <li class="disabledDate"><span>31</span></li>
+                <li data-date="1"><span>1</span></li>
+                <li data-date="2"><span>2</span></li>
+                <li data-date="3"><span>3</span></li>
+                <li data-date="4"><span>4</span></li>
+                <li data-date="5"><span>5</span></li>
+                <li data-date="6"><span>6</span></li>
+                <li data-date="7"><span>7</span></li>
+                <li data-date="8"><span>8</span></li>
+                <li data-date="9"><span>9</span></li>
+                <li data-date="10"><span>10</span></li>
+                <li data-date="11"><span>11</span></li>
+                <li data-date="12"><span>12</span></li>
+                <li data-date="13"><span>13</span></li>
+                <li data-date="14"><span>14</span></li>
+                <li data-date="15"><span>15</span></li>
+                <li data-date="16"><span>16</span></li>
+                <li class="active" data-date="17"><span>17</span></li>
+                <li data-date="18"><span>18</span></li>
+                <li data-date="19"><span>19</span></li>
+                <li data-date="20"><span>20</span></li>
+                <li data-date="21"><span>21</span></li>
+                <li data-date="22"><span>22</span></li>
+                <li data-date="23"><span>23</span></li>
+                <li data-date="24"><span>24</span></li>
+                <li data-date="25"><span>25</span></li>
+                <li data-date="26"><span>26</span></li>
+                <li data-date="27"><span>27</span></li>
+                <li data-date="28"><span>28</span></li>
+                <li data-date="29"><span>29</span></li>
+                <li data-date="30"><span>30</span></li>
+                <li data-date="31"><span>31</span></li>
+                <li class="disabledDate"><span>1</span></li>
+                <li class="disabledDate"><span>2</span></li>
+            </ul>
+
+
+
+        </div>
+
+        <!-- END CALENDAR -->
+
+        <div class="clearBreak"></div>
+
+        <!-- PROFIT CHART -->
+
+        <div class="profitChart">
+            <div class="header">
+                <img src="images/profit-chart.png">
+            </div>
+
+            <div class="bottom">
+                <div class="cell">
+                    <p>9,520.53</p>
+                    <span>Gross Profits</span>
+                </div>
+                <div class="cell">
+                    <p>5,436.82</p>
+                    <span>Net Profits</span>
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- END PROFIT CHART -->
+
+    </div>
+
+
+    <script>
+        $(document).ready(function() {
+
+            var duration = 3000;
+            var timer;
+            $('.start').on('click', function() {
+                if ($(window).width() < 1270) {
+                    var maxWidth = $(window).width() - 250;
+                }
+                else {
+                    var maxWidth = 370;
+                }
+                $('.start').hide();
+                $('.stop').show();
+                var $elapsedTime = $('#elapsedTime');
+                calculateIt(maxWidth);
+                timer = setInterval('calculateIt('+maxWidth+')', 100);
+
+                $elapsedTime.animate({
+                    width: maxWidth
+                }, duration, function() {
+                    $('.start').show();
+                    $('.stop').hide();
+                    $('#elapsedTime').css('width', '0');
+                    clearInterval(timer);
+                });
+            });
+
+            $('.stop').on('click', function() {
+                var $elapsedTime = $('#elapsedTime');
+                $elapsedTime.stop();
+                $('.start').show();
+                $('.stop').hide();
+                clearInterval(timer);
+
+                var w = $elapsedTime.width();
+                var percent = parseInt((w * 100) / maxWidth);
+            });
+            $('.resetToDefault').on('click', function() {
+
+                $('#emailNotifications').prop('checked', true);
+                $('#automaticallyLogout').prop('checked', false);
+                $('#showFullNames').prop('checked', false);
+                $('#showAds').prop('checked', false);
+                $('#sharingFeatures').prop('checked', true);
+                $('#allowMultipleUploads').prop('checked', true);
+            });
+
+            $('.calendar .days li').on('click', function() {
+                var clickedDate = $(this).attr('data-date');
+                if(clickedDate){
+                    $('.calendar .days li').removeClass('active');
+                    $(this).addClass('active');
+                    clickedDate = addSuffix(clickedDate);
+                    $('.calendar .month p').html(clickedDate);
+                }
+            });
+        });
+
+        function calculateIt(maxWidth) {
+            var w = $('#elapsedTime').width();
+            var percent = parseInt((w * 100) / maxWidth);
+        }
+
+        function addSuffix(i) {
+            var j = i % 10,
+            k = i % 100;
+            if (j == 1 && k != 11) {
+                return i + "st";
+            }
+            if (j == 2 && k != 12) {
+                return i + "nd";
+            }
+            if (j == 3 && k != 13) {
+                return i + "rd";
+            }
+            return i + "th";
+        }
+
+    </script>
+</body>
+</html>    

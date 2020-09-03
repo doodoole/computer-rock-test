@@ -1,0 +1,892 @@
+*,
+*:after,
+*:before {
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+body, html{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #f2f2f2;
+	font-family: 'Roboto', sans-serif;
+}
+h1{
+	margin:0;
+	padding:0;
+	font-weight:100;
+	font-size:24px;
+}
+p{
+	font-weight:300;
+}
+.clear{
+	clear: both;
+}
+.clearBreak{
+	clear: both;
+	margin-bottom:50px;
+}
+.holder{
+	max-width:1440px;
+	margin: 0 auto;
+}
+button{
+	-o-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;    
+	cursor: pointer;
+}
+button:hover{
+	background:#000 !important;
+	color: #fff !important;
+}
+button:focus {
+    outline: none;
+}
+/* PROFILE */    
+
+.profile-pic{
+	position: relative;
+	background: #6834ba;
+	display: inline-block;
+	color:#fff;
+}
+.profile-pic .image{
+	background: #fff;
+	display: inline-block;
+	position: relative;
+}
+.profile-pic .image,
+.profile-pic{
+	width:100%;
+	max-width: 100%;
+}
+.profile-pic img{
+	width:100%;
+	max-width: 100%;
+	display: block;
+}
+.profile-pic .image:before{
+	content: "";
+	display: inline-block;
+	position: absolute;
+	width: 100%;
+	height: 30%;
+	bottom: 0;
+	background-image: linear-gradient(rgba(104, 52, 186, 0) 0%, rgba(104, 52, 186, 0.3) 15%, rgba(104, 52, 186, .5) 30%, rgba(104, 52, 186, 0.7) 45%, rgba(104, 52, 186, 1) 95%, rgba(107,52,186,1) 100%);
+}
+.profile-pic .content{
+	padding:0 20px 20px 20px;
+}
+.profile-pic p{
+	font-size:12px;
+	font-weight: 100;
+	color: rgba(255,255,255,.65);
+}
+.social-statistics{
+	background: #592c9e;
+	padding:25px 0;
+}
+.social-statistics-cell{
+	width:33%;
+	float:left;
+	text-align: center;
+}
+.social-statistics-cell h2{
+	font-size:12px;
+	margin:0 0 8px 0;
+	padding:0;
+}
+.social-statistics p{
+	font-size:10px;
+	text-transform: uppercase;
+	color: rgba(255,255,255, 0.5);
+	margin:0;
+	padding:0;
+}
+/* END PROFILE */
+
+/* MUSIC */
+.music{
+	position: relative;
+	display: inline-block;
+	background:#009688;
+	color:#fff;
+	width:100%;
+	max-width:100%;
+}
+.music img{
+	width:100%;
+}
+.music .content{
+	position: relative;
+	padding:20px 0;
+	text-align: center;
+}
+
+.music .content h2{
+	margin:10px 0 0 0;
+	padding:0;
+	font-weight: 300;
+}
+.music .content p{
+	font-weight: 100;
+	color: rgba(255,255,255, 0.65);
+	font-size:14px;
+	margin-bottom:20px;
+}
+.music .track{
+	width:100%;
+	height: 5px;
+	background: #26a69a;
+}
+.music .elapsed{
+	width:70%;
+	height: 5px;
+	background: #5cbcb3;
+}
+.music .controls{
+	display: inline-block;
+	margin:0 auto;
+	padding:20px 0 0 0;
+}
+.music .controls .cell{
+	float: left;
+}
+.music .controls svg{
+	width: 40px;
+	padding:0 10px;
+	fill: #fff;
+}
+.music .menu{
+	display: inline-block;
+	position: absolute;
+	top: 12px;
+	right: 0px;
+}
+.music .menu svg{
+	fill: #fff;
+	width: 30px;
+}
+/* END MUSIC */
+
+/* LOGIN */
+
+.login{
+	display: inline-block;
+	background: #ff5607;
+	color:#fff;
+	width:100%;
+	max-width: 100%;
+}
+.login h1{
+	margin-bottom:15px;
+}
+.login input{
+	width:100%;
+	padding:5px;
+	font-size:14px;
+	font-weight: 100;
+	margin: 5px 0;
+}
+.login input::placeholder {
+	color: #1f252a;
+	opacity: 1; /* Firefox */
+}
+
+.login input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: #1f252a;
+}
+
+.login input::-ms-input-placeholder { /* Microsoft Edge */
+	color: #1f252a;
+}
+.login .formTop{
+	padding:20px;
+}
+.login .formBottom{
+	padding:20px;
+	background: rgba(0,0,0,0.3);
+}
+.login .formBottom span{
+	font-size: 12px;
+	font-weight: 100;
+}
+.login .submitForm{
+	padding:10px 20px;
+	background: #6834ba;
+	color: #fff;
+	border: none;
+	font-size:14px;
+	font-weight: 500;
+}
+.login .formBottom .table{
+	display: table;
+	width: 100%;
+}
+.login .formBottom .cell{
+	display: table-cell;
+}
+.login .formBottom .cell.submit{
+	text-align: right;
+}
+
+/* END LOGIN */
+
+/* WEATHER */
+
+.weather{
+	background: url('../images/weather.jpg') no-repeat;
+	color: #fff;
+	position: relative;
+	max-width: 100%;
+	background-size:cover;
+	background-position: bottom;
+}
+.weather .insideLeft{
+	width: 220px;
+	padding:37px 20px 20px 20px;
+	background: #3c464e;
+	text-align: center;
+}
+.weather h1{
+	font-size:60px;
+	font-weight: 100;
+	margin: 41px 0 0 0;
+	line-height: 40px;
+}
+.weather h1 span{
+	font-size:80px;
+	vertical-align:middle;
+}
+.weather p{
+	font-size: 14px;
+	font-weight: 100;
+	color: rgba(255, 255, 255, 0.65);
+}
+
+.weather svg{
+	width: 17px;
+	padding:0 3px;
+	fill: #fff;
+}
+.weather .location{
+	position: absolute;
+	top: 10px;
+	right: 20px;
+}
+.weather .location span{
+	vertical-align: text-top;
+	font-size:10px;
+	font-weight: 300;
+}    
+
+/* END WEATHER */
+
+/* VIDEO */
+
+.video{
+	background: #ec1561;
+	display: inline-block;
+	color: #fff;
+	width:100%;
+	max-width: 100%;
+}
+.video img{
+	width:100%;
+	max-width: 100%;
+}
+
+.video .controls{
+	display: table;
+	width: 100%;
+	padding: 10px;
+
+}
+.video .cell{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.video .controls svg{
+	width: 40px;
+	padding:0 10px;
+	fill: #fff;
+	cursor: pointer;
+}
+.video .controls svg:hover{
+	fill: #c0c0c0;
+	color: #c0c0c0;
+}
+
+.video .controls .stop{
+	display: none;
+}
+.video p{
+	font-size:12px;
+	font-weight: 300;
+}
+.video .track{
+	width: calc(100vw - 250px);
+	height: 9px;
+	background: #f15089;
+	border-radius: 5px;
+	margin: 0 auto;
+}
+.video .elapsed{
+	width:0px;
+	height: 9px;
+	background: #fff;
+	border-radius: 5px;
+}
+
+
+/* END VIDEO */
+
+/* GALLERY */
+
+.gallery{
+	background: #795546;
+	width:100%;
+	max-width:100%;
+	background: #917b6f;
+	text-align: center;
+}
+.gallery .header{
+	background: #795546;
+	width: 100%;
+}
+.gallery .wrapper{
+	background-color: #917b6f;
+	width: 550px;
+	margin: 0 auto;
+	padding:25px 0;
+}
+
+.gallery .header{
+	color:#fff;
+	padding: 20px 25px;
+	font-size:24px;
+	font-weight: 100;
+	display: table;
+	width: 100%;
+}
+.gallery .header .cell{
+	display: table-cell;
+	text-align: left;
+	vertical-align: middle;
+}
+.gallery .header .cell.aRight{
+	text-align: right;
+}
+.gallery h1,
+.gallery h2{
+	margin: 0;
+	padding: 0;
+	font-weight: 100;
+}
+.gallery h2{
+	font-size:14px;
+}
+
+/* END GALLERY */
+
+/* SETTINGS */
+
+.settings{
+	display: inline-block;
+	background: #374047;
+	color: #fff;
+	width: 100%;
+	max-width:100%;
+}
+.settings .switch {
+	position: relative;
+	display: inline-block;
+	width: 38px;
+	height: 19px;
+}
+
+.settings .switch input { 
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.settings .slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,.5);
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.settings .slider:before {
+	position: absolute;
+	content: "";
+	height: 15px;
+	width: 17px;
+	left: 18px;
+	bottom: 2px;
+	background-color: #55626c;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.settings input:checked + .slider:before {
+	background-color: #00a8f7;
+}
+
+.settings input:focus + .slider {
+	box-shadow: 0 0 0 transparent;
+}
+
+.settings input:checked + .slider:before {
+	-webkit-transform: translateX(-16px);
+	-ms-transform: translateX(-16px);
+	transform: translateX(-16px);
+}
+
+.settings{
+	width:100%;
+	max-width:100%;
+}
+.settings .header{
+	background: #374047;
+}
+.settings .header h1{
+	font-size:24px;
+	font-weight: 100;
+	margin:20px;
+}
+.settings .switches{
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+}
+.settings .switches .row{
+	display: table-row;
+}
+.settings .switches .cell{
+	display: table-cell;
+	padding:20px 20px;
+}
+.settings .switches .cell span{
+	font-size:14px;
+	font-weight: 100;
+	color: rgba(255,255,255,0.65);
+}
+
+.settings .switches .cell .switch{
+	float: right;
+}
+.settings .bottom{
+	background: rgba(0,0,0,.1);
+	padding:20px;
+	display: table;
+	width: 100%;
+}
+.settings .bottom .cell{
+	display: table-cell;
+}
+.settings .bottom .cell.resetSettings{
+	text-align: left;
+	font-size:12px;
+	font-weight: 100;
+	color: rgba(255,255,255,.65);
+}
+.settings .bottom .cell.saveSettings{
+	text-align: right;
+}
+
+.settings .bottom button.save{
+	padding:10px 20px;
+	background: #009688;
+	font-size:14px;
+	font-weight: 400;
+	color: #fff;
+	border: none;
+}
+.settings .bottom .resetToDefault{
+	cursor: pointer;
+}
+.settings .bottom .resetToDefault:hover{
+	color:#fff;
+}
+/* END SETTINGS */
+
+/* PUBLISH PHOTOS */
+
+.publishPhotos{
+	display: inline-block;
+	background: #47b04b;
+	width: 100%;
+	max-width: 100%;
+	padding-top: 50px;
+	text-align: center;
+	color: #fff;
+}
+
+.publishPhotos .header{
+	padding:0 25px;
+	text-align: left;
+}
+.publishPhotos h1{
+	margin:55px 0 20px 0;
+}
+.publishPhotos p{
+	font-size:14px;
+	font-weight: 100;
+	color: rgba(255,255,255,0.65);
+}
+.publishPhotos .bottom{
+	display: table;
+	width: 100%;
+	background: rgba(0,0,0,.15);
+	padding:25px;
+}
+.publishPhotos .cancelCell,
+.publishPhotos .publishCell{
+	display: table-cell;
+}
+.publishPhotos .cancelCell{
+	text-align: left;
+}
+.publishPhotos .publishCell{
+	text-align: right;
+}
+.publishPhotos button{
+	padding:10px 20px;
+	border: none;
+}
+.publishPhotos button.cancel{
+	color: #fff;
+	background: #2d7030;
+	font-size:14px;
+	font-weight: 100;
+}
+.publishPhotos button.publish{
+	color: #594403;
+	background: #ffc200;
+	font-size:14px;
+	font-weight: 400;
+}
+/* END PUBLISH PHOTOS */
+
+/* CALENDAR */
+
+.calendar {
+	background: #ffc200;
+	width:100%;
+	max-width: 100%;
+	position: relative;
+}
+
+.calendar ul {list-style-type: none;}
+
+.calendar .month {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	padding: 50px;
+	color: #fff;
+	width: 100%;
+	background: url('images/calendar.jpg') no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+.calendar .month .currentMonth{
+	font-size:14px;
+	font-weight: 300;
+}
+.calendar .month .currentYear{
+	font-size:14px;
+	font-weight: 100;
+}
+
+.calendar .month .prev{
+	color: #fff;
+	position: absolute;
+	left: 20px;
+	top: 35%;
+	font-size: 30px;
+	cursor: not-allowed;
+}
+.calendar .month .next{
+	color: #fff;
+	position: absolute;
+	right: 20px;
+	top: 35%;
+	font-size: 30px;
+	cursor: not-allowed;
+}
+.calendar .month p{
+	color: #fff;
+	font-size: 60px;
+	font-weight: 100;
+	margin: 0
+}
+
+.calendar .month .prev {
+	float: left;
+	padding-top: 10px;
+}
+
+.calendar .month .next {
+	float: right;
+	padding-top: 10px;
+}
+
+.calendar .days {
+	padding: 20px;
+	/*background: #eee;*/
+	margin: 0;
+}
+
+.calendar .days li {
+	list-style-type: none;
+	display: inline-block;
+	width: 12.9%;
+	text-align: center;
+	margin-bottom: 5px;
+	font-size:12px;
+	line-height: 32px;
+	font-weight: 300px;
+	color: #374047;
+	cursor: pointer;
+}
+
+.calendar .days li:hover{
+	background: rgba(0,0,0,.3);
+	border-radius: 5px;
+	color: #fff;
+}
+.calendar .days li.disabledDate:hover{
+	background: transparent;
+}
+.calendar .days li.active:hover {
+	background: #ffffff;
+	color: #ff5607;
+	font-weight: 400;
+	cursor: default;
+}
+.calendar .days li.active,
+.calendar .days li span.active {
+	background: #ffffff;
+	color: #ff5607;
+	font-weight: 400;
+	border-radius: 5px;
+}
+.calendar .days li.disabledDate span{
+	color: rgba(61, 65, 76, 0.5) !important;
+}
+.calendar .days li.disabledDate{
+	cursor: default;
+}
+
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+	.calendar .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+	.calendar .days li {width: 12.5%;}
+	.calendar .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+	.calendar .days li {width: 12.2%;}
+}
+
+
+/* END CALENDAR */
+
+/* PROFIT CHART */
+
+.profitChart{
+	background: #00bcd5;
+}
+.profitChart .header{
+	padding:30px;
+	text-align: center;
+}
+.profitChart .bottom{
+	display: table;
+	width: 100%;
+	background: rgba(0,0,0,.1);
+	padding: 30px 0;
+}
+.profitChart .bottom .cell{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	color: #fff;
+}
+.profitChart .bottom p{
+	font-size:24px;
+	font-weight: 300;
+	margin: 0;
+}
+.profitChart .bottom span{
+	font-size:12px;
+	font-weight: 300;
+	color: rgba(255,255,255, .65);
+}
+
+/* END PROFIT CHART */
+
+
+
+@media screen and (min-width: 1270px) {
+	.holder{
+		width:1260px;
+		display: grid;
+		grid-template-columns: 300px 550px 300px ;
+		grid-gap: 50px;
+	}
+	.profile-pic{
+		grid-row: 1;
+		grid-column: 1;
+	}
+	.music{
+		grid-row: 2;
+		grid-column: 1;
+		height:490px;
+	}
+
+	.login{
+		grid-row: 3;
+		grid-column: 1;
+		margin-top: -345px;
+		height:248px;
+	}
+	.weather{
+		grid-row: 1;
+		grid-column: 2;
+		height:280px;
+	}
+	.video{
+		grid-row: 2;
+		grid-column:2;
+		height: 350px;
+		margin-top:-130px;
+	}
+	.video .track{
+		width: 370px;
+	}
+	.gallery{
+		grid-row: 2;
+		grid-column: 2;
+		margin-top:270px;
+		height: 300px;
+	}
+	.settings{
+		grid-row: 3;
+		grid-column: 2;
+		margin-top: -175px;
+	}
+	.publishPhotos{
+		grid-row: 1;
+		grid-column: 3;
+	}
+	.calendar{
+		grid-row: 2;
+		grid-column: 3;
+		height: 410px;
+	}
+	.profitChart{
+		grid-row: 2;
+		grid-column: 3;
+		height: 370px;
+		margin-top: 460px;
+	}
+
+}
+
+
+/* GALLERY */
+
+.gallery .wrapper {
+	padding:25px;
+	display: grid;
+	grid-gap: 2px;
+	grid-template-columns: 124px 124px 124px 124px;
+	grid-template-rows: 88px 88px 88px;
+	background-color: #917b6f;
+	color: #444;
+}
+
+.gallery .wrapper .a {
+	grid-column: 1;
+	grid-row: 1 / span 3;
+}
+.gallery .wrapper .b {
+	grid-column: 2 ;
+	grid-row: 1 ;
+}
+.gallery .wrapper .c {
+	grid-column: 3 ;
+	grid-row: 1 ;
+}
+.gallery .wrapper .d {
+	grid-column: 4 ;
+	grid-row: 1 ;
+}
+.gallery .wrapper .e {
+	grid-column: 1 ;
+	grid-row: 3 ;
+}
+.gallery .wrapper .f {
+	grid-column: 2 ;
+	grid-row: 2 ;
+}
+.gallery .wrapper .g {
+	grid-column: 2 ;
+	grid-row: 3 ;
+}
+.gallery .wrapper .h {
+	grid-column: 3 / span 2 ;
+	grid-row: 2 / span 2 ;
+}
+
+/* END GALLERY */	
+
+
+@media screen and (max-width: 570px) {
+
+
+	.gallery .wrapper {
+		padding:25px;
+		display: block;
+		background-color: #917b6f;
+		color: #444;
+		width: 100%;
+		max-width: 100%;
+	}
+	.gallery .wrapper img{
+		width: 100%;
+		max-width: 100%;
+	}
+}
+@media screen and (max-width: 450px) {
+
+	.settings .switches,
+	.settings .switches .row,
+	.settings .switches .cell{
+		display: block;
+		width: 100%;
+		max-width: 100%;
+	}
+	.weather .insideLeft{
+		width: 180px;
+	}
+}
