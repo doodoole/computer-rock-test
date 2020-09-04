@@ -10,19 +10,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet"> 
 
-
-    <script
-    type="text/javascript" src="//code.jquery.com/jquery-1.7.1.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.7.1.js"></script>
+    
     <title>Test</title>
 
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
-
 </head>
 <body>
-
     <div class="holder">
 
         <!-- PROFILE -->
+
         <div class="profile-pic">
             <div class="image">
                 <img src="images/profile-pic.jpg" alt="Profile pic" />
@@ -65,36 +63,32 @@
                     <div class="elapsed"></div>
                 </div>
                 <div class="controls">
-                    <div class="cell">
-                        <svg viewBox="0 0 448 512"><path d="M64 468V44c0-6.6 5.4-12 12-12h48c6.6 0 12 5.4 12 12v176.4l195.5-181C352.1 22.3 384 36.6 384 64v384c0 27.4-31.9 41.7-52.5 24.6L136 292.7V468c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12z" class=""></path></svg>
+                    <div class="cell prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px">
+                            <path fill-rule="evenodd"  fill-opacity="0.651" fill="rgb(255, 255, 255)"
+                             d="M13.000,14.000 C12.839,14.000 12.692,13.953 12.557,13.885 L12.553,13.894 L2.553,7.894 L2.557,7.885 C2.230,7.721 2.000,7.391 2.000,7.000 C2.000,6.609 2.230,6.279 2.557,6.115 L2.553,6.106 L12.553,0.105 L12.557,0.115 C12.692,0.047 12.839,-0.000 13.000,-0.000 C13.552,-0.000 14.000,0.448 14.000,1.000 L14.000,13.000 C14.000,13.552 13.552,14.000 13.000,14.000 ZM1.000,14.000 C0.448,14.000 0.000,13.552 0.000,13.000 L0.000,1.000 C0.000,0.448 0.448,-0.000 1.000,-0.000 C1.552,-0.000 2.000,0.448 2.000,1.000 L2.000,7.000 L2.000,13.000 C2.000,13.552 1.552,14.000 1.000,14.000 Z"/>
+                        </svg>
                     </div>
-                    <div class="cell">
-                        <svg  viewBox="0 0 448 512" class="svg-inline--fa fa-play fa-w-14 fa-2x"><path fill="currentColor" d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z" class=""></path></svg>
+                    <div class="cell play">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px">
+                            <path fill-rule="evenodd" d="M18.000,9.000 C18.000,9.391 17.770,9.721 17.443,9.885 L17.447,9.894 L1.447,17.894 L1.443,17.885 C1.308,17.953 1.161,18.000 1.000,18.000 C0.448,18.000 -0.000,17.552 -0.000,17.000 C-0.000,17.000 0.000,17.000 0.000,17.000 L0.000,1.000 C0.000,1.000 -0.000,1.000 -0.000,1.000 C-0.000,0.448 0.448,-0.000 1.000,-0.000 C1.161,-0.000 1.308,0.047 1.443,0.115 L1.447,0.106 L17.447,8.106 L17.443,8.115 C17.770,8.279 18.000,8.609 18.000,9.000 Z"/>
+                        </svg>
                     </div>
-                    <div class="cell">
-                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="step-forward" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-step-forward fa-w-14 fa-7x"><path fill="currentColor" d="M384 44v424c0 6.6-5.4 12-12 12h-48c-6.6 0-12-5.4-12-12V291.6l-195.5 181C95.9 489.7 64 475.4 64 448V64c0-27.4 31.9-41.7 52.5-24.6L312 219.3V44c0-6.6 5.4-12 12-12h48c6.6 0 12 5.4 12 12z" class=""></path></svg>
+                    <div class="cell next">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px">
+                            <path fill-rule="evenodd"  fill-opacity="0.651" fill="rgb(255, 255, 255)"
+                            d="M13.000,14.000 C12.448,14.000 12.000,13.552 12.000,13.000 L12.000,7.000 L12.000,1.000 C12.000,0.448 12.448,-0.000 13.000,-0.000 C13.552,-0.000 14.000,0.448 14.000,1.000 L14.000,13.000 C14.000,13.552 13.552,14.000 13.000,14.000 ZM11.443,7.885 L11.447,7.894 L1.447,13.894 L1.443,13.885 C1.308,13.953 1.161,14.000 1.000,14.000 C0.448,14.000 -0.000,13.552 -0.000,13.000 C-0.000,13.000 0.000,13.000 0.000,13.000 L0.000,1.000 C0.000,1.000 -0.000,1.000 -0.000,1.000 C-0.000,0.448 0.448,-0.000 1.000,-0.000 C1.161,-0.000 1.308,0.047 1.443,0.115 L1.447,0.105 L11.447,6.106 L11.443,6.115 C11.770,6.279 12.000,6.609 12.000,7.000 C12.000,7.391 11.770,7.721 11.443,7.885 Z"/>
+                    </svg>
                     </div>
                     <div class="clear"></div>
                     <div class="menu">
-                        <svg version="1.1" viewBox="0 0 24 24">
-                            <g>
-                                <path class="st0" d="M13.1,10.4h-2.3c-0.1,0-0.2,0.1-0.2,0.2c-0.1,0-0.1,0.1-0.1,0.2v2.3c0,0.1,0,0.2,0.1,0.3
-                                c0,0.1,0.1,0.1,0.2,0.1h2.3c0.1,0,0.2,0,0.3-0.1c0.1-0.1,0.1-0.2,0.1-0.3v-2.3c0-0.1,0-0.2-0.1-0.3C13.3,10.5,13.2,10.4,13.1,10.4z
-                                "/>
-                                <path class="st0" d="M13.1,15h-2.3c-0.1,0-0.2,0-0.3,0.1c-0.1,0.1-0.1,0.2-0.1,0.3v2.3c0,0.1,0,0.2,0.1,0.3
-                                c0.1,0.1,0.2,0.1,0.3,0.1h2.3c0.1,0,0.2,0,0.3-0.1c0.1-0.1,0.1-0.2,0.1-0.3v-2.3c0-0.1,0-0.2-0.1-0.3C13.3,15.1,13.2,15,13.1,15z"
-                                />
-                                <path class="st0" d="M13.1,5.8h-2.3c-0.1,0-0.2,0-0.3,0.1c0,0.1,0,0.2,0,0.3v2.3c0,0.1,0,0.2,0.1,0.3c0,0.1,0.1,0.1,0.2,0.1h2.3
-                                c0.1,0,0.2,0,0.3-0.1s0.1-0.2,0.1-0.3V6.2c0-0.1,0-0.2-0.1-0.3C13.3,5.9,13.2,5.8,13.1,5.8z"/>
-                            </g>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2px" height="10px">
+                            <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                             d="M1.000,6.000 C0.448,6.000 -0.000,5.552 -0.000,5.000 C-0.000,4.448 0.448,4.000 1.000,4.000 C1.552,4.000 2.000,4.448 2.000,5.000 C2.000,5.552 1.552,6.000 1.000,6.000 ZM1.000,2.000 C0.448,2.000 -0.000,1.552 -0.000,1.000 C-0.000,0.448 0.448,-0.000 1.000,-0.000 C1.552,-0.000 2.000,0.448 2.000,1.000 C2.000,1.552 1.552,2.000 1.000,2.000 ZM1.000,8.000 C1.552,8.000 2.000,8.448 2.000,9.000 C2.000,9.552 1.552,10.000 1.000,10.000 C0.448,10.000 -0.000,9.552 -0.000,9.000 C-0.000,8.448 0.448,8.000 1.000,8.000 Z"/>
                         </svg>
-
-
                     </div>
                 </div>
             </div>
-
-
         </div>
 
         <!-- END MUSIC -->
@@ -131,25 +125,26 @@
 
         <div class="weather">
             <div class="insideLeft">
-                <img src="images/sun.png" />
+                <img src="images/sun.png" alt="Sun" />
                 <h1>31<span>&#176;</span></h1>
                 <p>Sunny all day</p>
             </div>
             <div class="location">
-
-                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-map-marker-alt fa-w-12 fa-2x"><path fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z" class=""></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="14px">
+                    <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                     d="M5.000,14.000 C5.000,14.000 -0.000,9.000 -0.000,5.000 C-0.000,2.239 2.239,0.000 5.000,0.000 C7.761,0.000 10.000,2.239 10.000,5.000 C10.000,9.000 5.000,14.000 5.000,14.000 ZM5.000,3.000 C3.895,3.000 3.000,3.895 3.000,5.000 C3.000,6.105 3.895,7.000 5.000,7.000 C6.105,7.000 7.000,6.105 7.000,5.000 C7.000,3.895 6.105,3.000 5.000,3.000 Z"/>
+                </svg>
                 <span>San Francisco, CA</span>
             </div>
         </div>
 
         <!-- END WEATHER -->
 
-
         <div class="clearBreak"></div>
 
         <!-- VIDEO -->
         <div class="video">
-            <img src="images/video.jpg" />
+            <img src="images/video.jpg" alt="Video" />
             <div class="controls">
                 <div class="cell">
                     <svg class="start" viewBox="0 0 448 512"><path fill="currentColor" d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z" class=""></path></svg>
@@ -166,9 +161,7 @@
                 <div class="cell">
                     <p>1:27:41</p>
                 </div>
-
             </div>
-
         </div>
 
         <!-- END VIDEO -->
@@ -183,14 +176,14 @@
                 <div class="cell aRight"><h2>See All &#187;</h2></div>
             </div>
             <div class="wrapper">
-                <div class="box a"><img src="images/image01.jpg"></div>
-                <div class="box b"><img src="images/image02.jpg"></div>
-                <div class="box c"><img src="images/image03.jpg"></div>
-                <div class="box d"><img src="images/image04.jpg"></div>
-                <div class="box e"><img src="images/image05.jpg"></div>
-                <div class="box f"><img src="images/image06.jpg"></div>
-                <div class="box g"><img src="images/image08.jpg"></div>
-                <div class="box h"><img src="images/image07.jpg"></div>
+                <div class="box a"><img src="images/image01.jpg" /></div>
+                <div class="box b"><img src="images/image02.jpg" /></div>
+                <div class="box c"><img src="images/image03.jpg" /></div>
+                <div class="box d"><img src="images/image04.jpg" /></div>
+                <div class="box e"><img src="images/image05.jpg" /></div>
+                <div class="box f"><img src="images/image06.jpg" /></div>
+                <div class="box g"><img src="images/image08.jpg" /></div>
+                <div class="box h"><img src="images/image07.jpg" /></div>
             </div>
         </div>
 
@@ -203,26 +196,23 @@
         <div class="settings">
             <div class="header">
                 <h1>Settings</h1>
-
-                <div class="switches">
-
-                    <div class="row">
-                        <div class="cell">
-                            <span>Email Notifications</span>
-                            <label class="switch">
-                                <input id="emailNotifications" type="checkbox" checked="checked">
-                                <span class="slider"></span>
-                            </label>
+                    <div class="switches">
+                        <div class="row">
+                            <div class="cell">
+                                <span>Email Notifications</span>
+                                <label class="switch">
+                                    <input id="emailNotifications" type="checkbox" checked="checked">
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+                            <div class="cell">
+                                <span>Automatically Logout</span>
+                                <label class="switch">
+                                    <input id="automaticallyLogout" type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                           </div>
                         </div>
-                        <div class="cell">
-                            <span>Automatically Logout</span>
-                            <label class="switch">
-                                <input id="automaticallyLogout" type="checkbox">
-                                <span class="slider"></span>
-                            </label>
-                        </div>
-
-                    </div>
                     <div class="row">
                         <div class="cell">
                             <span>Show Full Names</span>
@@ -238,7 +228,6 @@
                                 <span class="slider"></span>
                             </label>
                         </div>
-
                     </div>
                     <div class="row">
                         <div class="cell">
@@ -254,13 +243,9 @@
                                 <input id="allowMultipleUploads" type="checkbox" checked="checked">
                                 <span class="slider"></span>
                             </label>
-
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
             <div class="bottom">
                 <div class="cell resetSettings">
@@ -270,7 +255,6 @@
                     <button class="save">Save</button>
                 </div>
             </div>
-
         </div>
 
         <!-- END SETTINGS -->
@@ -280,7 +264,10 @@
         <!-- PUBLISH PHOTOS -->
 
         <div class="publishPhotos">
-            <img src="images/publish-photos.png">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="114px" height="90px">
+                <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                 d="M98.000,60.021 L98.000,74.000 L81.824,74.000 L79.825,89.023 L0.524,78.470 L8.175,20.977 L18.000,22.284 L18.000,16.000 L27.295,16.000 L26.639,11.081 L105.667,0.267 L113.361,57.919 L98.000,60.021 ZM18.000,24.302 L9.894,23.223 L2.770,76.751 L78.106,86.777 L79.806,74.000 L18.000,74.000 L18.000,24.302 ZM20.000,18.000 L20.000,22.550 L20.000,24.568 L20.000,72.000 L80.073,72.000 L82.090,72.000 L96.000,72.000 L96.000,60.295 L96.000,58.270 L96.000,18.000 L29.574,18.000 L27.562,18.000 L20.000,18.000 ZM103.957,2.525 L28.880,12.799 L29.307,16.000 L98.000,16.000 L98.000,57.997 L111.120,56.201 L103.957,2.525 ZM35.000,26.000 C38.866,26.000 42.000,29.134 42.000,33.000 C42.000,36.866 38.866,40.000 35.000,40.000 C31.134,40.000 28.000,36.866 28.000,33.000 C28.000,29.134 31.134,26.000 35.000,26.000 ZM43.000,55.000 L53.000,45.000 L58.000,50.000 L66.000,42.000 L88.000,64.000 L28.000,64.000 L40.000,52.000 L43.000,55.000 Z"/>
+            </svg>
             <div class="header">
                 <h1>Publish Photos</h1>
                 <p>Sed posuere consectetur est at lobortis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur mus.</p>
@@ -302,18 +289,24 @@
         <!-- CALENDAR -->
 
         <div class="calendar">
-
             <div class="month">      
-
-                <div class="prev">&#10094;</div>
-                <div class="next">&#10095;</div>
+                <div class="prev">
+                    <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="24px">
+                        <path fill-rule="evenodd"  opacity="0.502" fill="rgb(255, 255, 255)"
+                         d="M13.414,3.414 L13.414,3.414 L4.828,12.000 L13.414,20.586 L13.414,20.586 C13.776,20.948 14.000,21.448 14.000,22.000 C14.000,23.105 13.105,24.000 12.000,24.000 C11.448,24.000 10.948,23.776 10.586,23.414 L0.586,13.414 L0.586,13.414 C0.224,13.052 0.000,12.552 0.000,12.000 C0.000,11.448 0.224,10.948 0.586,10.586 L0.586,10.586 L10.586,0.586 C10.948,0.224 11.448,0.000 12.000,0.000 C13.105,0.000 14.000,0.895 14.000,2.000 C14.000,2.552 13.776,3.052 13.414,3.414 Z"/>
+                    </svg>
+                </div>
+                <div class="next">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="24px">
+                        <path fill-rule="evenodd"  opacity="0.502" fill="rgb(255, 255, 255)"
+                         d="M14.000,12.000 C14.000,12.552 13.776,13.052 13.414,13.414 L13.414,13.414 L3.414,23.414 L3.414,23.414 C3.052,23.776 2.552,24.000 2.000,24.000 C0.895,24.000 0.000,23.105 0.000,22.000 C0.000,21.448 0.224,20.948 0.586,20.586 L9.171,12.000 L0.586,3.414 C0.224,3.052 0.000,2.552 0.000,2.000 C0.000,0.895 0.895,0.000 2.000,0.000 C2.552,0.000 3.052,0.224 3.414,0.586 L3.414,0.586 L13.414,10.586 L13.414,10.586 C13.776,10.948 14.000,11.448 14.000,12.000 Z"/>
+                    </svg>
+                </div>
                 <div>
                     <p>17th</p>
                     <span class="currentMonth">March</span><span class="currentYear"> 2015</span>
                 </div>
-
             </div>
-
             <ul class="days">  
                 <li class="disabledDate"><span>30</span></li>
                 <li class="disabledDate"><span>31</span></li>
@@ -351,9 +344,6 @@
                 <li class="disabledDate"><span>1</span></li>
                 <li class="disabledDate"><span>2</span></li>
             </ul>
-
-
-
         </div>
 
         <!-- END CALENDAR -->
@@ -364,9 +354,10 @@
 
         <div class="profitChart">
             <div class="header">
-                <img src="images/profit-chart.png">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="197" viewBox="0 0 256 197">
+                  <image id="Line" width="256" height="197" xlink:href="data:img/png;base64,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"/>
+                </svg>
             </div>
-
             <div class="bottom">
                 <div class="cell">
                     <p>9,520.53</p>
@@ -375,21 +366,16 @@
                 <div class="cell">
                     <p>5,436.82</p>
                     <span>Net Profits</span>
-
                 </div>
             </div>
-
-
         </div>
 
         <!-- END PROFIT CHART -->
 
     </div>
 
-
     <script>
         $(document).ready(function() {
-
             var duration = 3000;
             var timer;
             $('.start').on('click', function() {
@@ -421,12 +407,10 @@
                 $('.start').show();
                 $('.stop').hide();
                 clearInterval(timer);
-
                 var w = $elapsedTime.width();
                 var percent = parseInt((w * 100) / maxWidth);
             });
             $('.resetToDefault').on('click', function() {
-
                 $('#emailNotifications').prop('checked', true);
                 $('#automaticallyLogout').prop('checked', false);
                 $('#showFullNames').prop('checked', false);
@@ -468,4 +452,4 @@
 
     </script>
 </body>
-</html>    
+</html>

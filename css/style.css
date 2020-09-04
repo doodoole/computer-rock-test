@@ -4,11 +4,13 @@
 	-moz-box-sizing:border-box;
 	box-sizing:border-box;
 }
-body, html{
+html{
 	margin: 0;
 	padding: 0;
 }
 body{
+	margin: 0;
+	padding: 0;
 	background: #f2f2f2;
 	font-family: 'Roboto', sans-serif;
 }
@@ -46,6 +48,7 @@ button:hover{
 button:focus {
     outline: none;
 }
+
 /* PROFILE */    
 
 .profile-pic{
@@ -107,9 +110,11 @@ button:focus {
 	margin:0;
 	padding:0;
 }
+
 /* END PROFILE */
 
 /* MUSIC */
+
 .music{
 	position: relative;
 	display: inline-block;
@@ -126,7 +131,6 @@ button:focus {
 	padding:20px 0;
 	text-align: center;
 }
-
 .music .content h2{
 	margin:10px 0 0 0;
 	padding:0;
@@ -161,16 +165,28 @@ button:focus {
 	padding:0 10px;
 	fill: #fff;
 }
+.music .controls .cell.play svg:hover{
+	width: 40px;
+	padding:0 10px;
+	fill: #c0c0c0;
+	cursor: pointer;
+}
+.music .controls .cell.prev svg,
+.music .controls .cell.next svg{
+	margin-top: 2px;
+}
+
 .music .menu{
 	display: inline-block;
 	position: absolute;
-	top: 12px;
-	right: 0px;
+	top: 3px;
+	right: -6px;
 }
 .music .menu svg{
 	fill: #fff;
 	width: 30px;
 }
+
 /* END MUSIC */
 
 /* LOGIN */
@@ -196,11 +212,9 @@ button:focus {
 	color: #1f252a;
 	opacity: 1; /* Firefox */
 }
-
 .login input:-ms-input-placeholder { /* Internet Explorer 10-11 */
 	color: #1f252a;
 }
-
 .login input::-ms-input-placeholder { /* Microsoft Edge */
 	color: #1f252a;
 }
@@ -267,7 +281,6 @@ button:focus {
 	font-weight: 100;
 	color: rgba(255, 255, 255, 0.65);
 }
-
 .weather svg{
 	width: 17px;
 	padding:0 3px;
@@ -282,6 +295,7 @@ button:focus {
 	vertical-align: text-top;
 	font-size:10px;
 	font-weight: 300;
+	line-height:16px;
 }    
 
 /* END WEATHER */
@@ -299,12 +313,10 @@ button:focus {
 	width:100%;
 	max-width: 100%;
 }
-
 .video .controls{
 	display: table;
 	width: 100%;
 	padding: 10px;
-
 }
 .video .cell{
 	display: table-cell;
@@ -322,7 +334,6 @@ button:focus {
 	fill: #c0c0c0;
 	color: #c0c0c0;
 }
-
 .video .controls .stop{
 	display: none;
 }
@@ -343,7 +354,6 @@ button:focus {
 	background: #fff;
 	border-radius: 5px;
 }
-
 
 /* END VIDEO */
 
@@ -366,7 +376,6 @@ button:focus {
 	margin: 0 auto;
 	padding:25px 0;
 }
-
 .gallery .header{
 	color:#fff;
 	padding: 20px 25px;
@@ -410,13 +419,11 @@ button:focus {
 	width: 38px;
 	height: 19px;
 }
-
 .settings .switch input { 
 	opacity: 0;
 	width: 0;
 	height: 0;
 }
-
 .settings .slider {
 	position: absolute;
 	cursor: pointer;
@@ -428,7 +435,6 @@ button:focus {
 	-webkit-transition: .4s;
 	transition: .4s;
 }
-
 .settings .slider:before {
 	position: absolute;
 	content: "";
@@ -440,21 +446,17 @@ button:focus {
 	-webkit-transition: .4s;
 	transition: .4s;
 }
-
 .settings input:checked + .slider:before {
 	background-color: #00a8f7;
 }
-
 .settings input:focus + .slider {
 	box-shadow: 0 0 0 transparent;
 }
-
 .settings input:checked + .slider:before {
 	-webkit-transform: translateX(-16px);
 	-ms-transform: translateX(-16px);
 	transform: translateX(-16px);
 }
-
 .settings{
 	width:100%;
 	max-width:100%;
@@ -484,7 +486,6 @@ button:focus {
 	font-weight: 100;
 	color: rgba(255,255,255,0.65);
 }
-
 .settings .switches .cell .switch{
 	float: right;
 }
@@ -506,7 +507,6 @@ button:focus {
 .settings .bottom .cell.saveSettings{
 	text-align: right;
 }
-
 .settings .bottom button.save{
 	padding:10px 20px;
 	background: #009688;
@@ -521,6 +521,7 @@ button:focus {
 .settings .bottom .resetToDefault:hover{
 	color:#fff;
 }
+
 /* END SETTINGS */
 
 /* PUBLISH PHOTOS */
@@ -534,7 +535,6 @@ button:focus {
 	text-align: center;
 	color: #fff;
 }
-
 .publishPhotos .header{
 	padding:0 25px;
 	text-align: left;
@@ -579,6 +579,7 @@ button:focus {
 	font-size:14px;
 	font-weight: 400;
 }
+
 /* END PUBLISH PHOTOS */
 
 /* CALENDAR */
@@ -589,7 +590,6 @@ button:focus {
 	max-width: 100%;
 	position: relative;
 }
-
 .calendar ul {list-style-type: none;}
 
 .calendar .month {
@@ -599,7 +599,7 @@ button:focus {
 	padding: 50px;
 	color: #fff;
 	width: 100%;
-	background: url('images/calendar.jpg') no-repeat;
+	background: url('../images/calendar.jpg') no-repeat;
 	background-size: cover;
 	text-align: center;
 }
@@ -611,7 +611,6 @@ button:focus {
 	font-size:14px;
 	font-weight: 100;
 }
-
 .calendar .month .prev{
 	color: #fff;
 	position: absolute;
@@ -634,23 +633,19 @@ button:focus {
 	font-weight: 100;
 	margin: 0
 }
-
 .calendar .month .prev {
 	float: left;
 	padding-top: 10px;
 }
-
 .calendar .month .next {
 	float: right;
 	padding-top: 10px;
 }
-
 .calendar .days {
 	padding: 20px;
 	/*background: #eee;*/
 	margin: 0;
 }
-
 .calendar .days li {
 	list-style-type: none;
 	display: inline-block;
@@ -663,7 +658,6 @@ button:focus {
 	color: #374047;
 	cursor: pointer;
 }
-
 .calendar .days li:hover{
 	background: rgba(0,0,0,.3);
 	border-radius: 5px;
@@ -692,8 +686,6 @@ button:focus {
 	cursor: default;
 }
 
-
-/* Add media queries for smaller screens */
 @media screen and (max-width:720px) {
 	.calendar .days li {width: 13.1%;}
 }
@@ -707,7 +699,6 @@ button:focus {
 	.calendar .days li {width: 12.2%;}
 }
 
-
 /* END CALENDAR */
 
 /* PROFIT CHART */
@@ -716,7 +707,7 @@ button:focus {
 	background: #00bcd5;
 }
 .profitChart .header{
-	padding:30px;
+	padding:30px 0px;
 	text-align: center;
 }
 .profitChart .bottom{
@@ -744,9 +735,13 @@ button:focus {
 
 /* END PROFIT CHART */
 
-
-
 @media screen and (min-width: 1270px) {
+	body{
+		margin: 50px 0;
+	}
+	.clearBreak{
+		display: none;
+	}
 	.holder{
 		width:1260px;
 		display: grid;
@@ -809,11 +804,10 @@ button:focus {
 		height: 370px;
 		margin-top: 460px;
 	}
-
 }
 
 
-/* GALLERY */
+/* GALLERY IMAGES*/
 
 .gallery .wrapper {
 	padding:25px;
@@ -824,7 +818,6 @@ button:focus {
 	background-color: #917b6f;
 	color: #444;
 }
-
 .gallery .wrapper .a {
 	grid-column: 1;
 	grid-row: 1 / span 3;
@@ -858,12 +851,10 @@ button:focus {
 	grid-row: 2 / span 2 ;
 }
 
-/* END GALLERY */	
+/* END GALLERY IMAGES */	
 
 
 @media screen and (max-width: 570px) {
-
-
 	.gallery .wrapper {
 		padding:25px;
 		display: block;
@@ -877,8 +868,8 @@ button:focus {
 		max-width: 100%;
 	}
 }
-@media screen and (max-width: 450px) {
 
+@media screen and (max-width: 450px) {
 	.settings .switches,
 	.settings .switches .row,
 	.settings .switches .cell{
